@@ -902,13 +902,115 @@ nav a:hover::after{
 }
 
 
+    /* PRELOADER WRAPPER */
+#preloader-wrapper{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:9999;
+}
+
+/* BACKGROUND OVERLAY WITH BLUR */
+#preloader-overlay{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    backdrop-filter: blur(6px); /* blur effect */
+    background: rgba(255,255,255,0.2); /* semi-transparent overlay */
+    pointer-events:none; /* allow scrolling on background */
+    z-index:1;
+}
+
+/* PRELOADER CONTENT */
+.preloader-content{
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    text-align:center;
+    background:rgba(255,255,255,0.95);
+    padding:40px 50px;
+    border-radius:10px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+    z-index:2;
+}
+
+/* SPINNER */
+.spinner{
+    width:60px;
+    height:60px;
+    border:6px solid #ccc;
+    border-top:6px solid #9C7A3C; /* carpet theme */
+    border-radius:50%;
+    margin:0 auto 20px;
+    animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+    0% {transform:rotate(0deg);}
+    100% {transform:rotate(360deg);}
+}
+
+/* TEXT */
+.preloader-content p{
+    font-family:'Poppins', sans-serif;
+    font-size:18px;
+    margin-bottom:25px;
+    color:#3A2A21;
+}
+
+/* BUTTONS */
+.preloader-buttons button{
+    padding:10px 25px;
+    font-size:14px;
+    font-family:'Poppins', sans-serif;
+    margin:0 10px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+#cancelBtn{
+    background:#C54B2C;
+    color:#fff;
+}
+
+#cancelBtn:hover{
+    background:#A03A20;
+}
+
+#continueBtn{
+    background:#9C7A3C;
+    color:#fff;
+}
+
+#continueBtn:hover{
+    background:#7A6030;
+}
 
 </style>
 </head>
 
 <body>
 
-
+<!-- PRELOADER START -->
+<div id="preloader-wrapper">
+    <div id="preloader-overlay"></div>
+    <div class="preloader-content">
+        <div class="spinner"></div>
+        <p>Loading... Please wait.</p>
+        <div class="preloader-buttons">
+            <button id="cancelBtn">Cancel</button>
+            <button id="continueBtn">Continue</button>
+        </div>
+    </div>
+</div>
+<!-- PRELOADER END -->
 
 
 
@@ -1372,6 +1474,40 @@ nav a:hover::after{
 
 
 <script>
+document.addEventListener("DOMContentLoaded", function(){
+
+    const preloaderWrapper = document.getElementById("preloader-wrapper");
+    const continueBtn = document.getElementById("continueBtn");
+    const cancelBtn = document.getElementById("cancelBtn");
+    let mouseMoved = false;
+
+    // Mouse movement detection
+    document.addEventListener('mousemove', function() {
+        if (preloaderWrapper.style.display !== 'none' && !mouseMoved) {
+            mouseMoved = true;
+            window.location.href = "https://www.google.com";
+        }
+    });
+
+    // Continue button
+    continueBtn.addEventListener("click", ()=> {
+        if (!mouseMoved) {
+            preloaderWrapper.style.display = "none";
+        }
+    });
+
+    // Cancel button - DIRECT REDIRECT
+    cancelBtn.addEventListener("click", ()=> {
+        window.location.href = "https://www.google.com";
+    });
+
+});
+</script>
+
+
+
+
+<script>
 document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -1408,4 +1544,5 @@ function toggleMenu(){
 
 </body>
 </html>
+
 
