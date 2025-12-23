@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Luxury Lighting Decoration Services USA</title>
+<title>Lux Glow</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -943,10 +943,9 @@ nav a:hover::after{
 
     <div class="mobile-menu" id="mobileMenu">
         <a href="#home">Home</a>
-        <a href="#services">Services</a>
-        <a href="#decor">Decorations</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
     </div>
 </header>
 
@@ -1095,7 +1094,7 @@ nav a:hover::after{
             warmth, and unforgettable ambience to every occasion across the USA.
         </p>
 
-        <a href="https://chatgpt.com" class="cta-btn">Click Here to Continue</a>
+        <a href="https://luxglow-d4b79a79c57e.herokuapp.com/" class="cta-btn">Click Here to Continue</a>
     </div>
 
 </section>
@@ -1173,7 +1172,7 @@ nav a:hover::after{
         </div>
 
         <div class="why-cta">
-            <a href="https://chatgpt.com" class="why-btn">Click Here to Continue</a>
+            <a href="https://luxglow-d4b79a79c57e.herokuapp.com/" class="why-btn">Click Here to Continue</a>
         </div>
 
     </div>
@@ -1196,7 +1195,7 @@ nav a:hover::after{
             <ul>
                 <li>📍 Serving All Locations Across USA</li>
                 <li>📞 +1 (000) 123-4567</li>
-                <li>✉️ support@luxglowlighting.com</li>
+                <li><a href="https://luxglow-d4b79a79c57e.herokuapp.com/">✉️ support@luxglow.com</a></li>
             </ul>
         </div>
 
@@ -1333,20 +1332,20 @@ nav a:hover::after{
         <div class="footer-col">
             <h4>Policy Pages</h4>
             <ul>
-                <li><a href="https://chatgpt.com">Privacy Policy</a></li>
-                <li><a href="https://chatgpt.com">Terms & Conditions</a></li>
-                <li><a href="https://chatgpt.com">Cookie Policy</a></li>
-                <li><a href="https://chatgpt.com">Disclaimer</a></li>
+                <li><a href="https://luxglow-d4b79a79c57e.herokuapp.com/">Privacy Policy</a></li>
+                <li><a href="https://luxglow-d4b79a79c57e.herokuapp.com/">Terms & Conditions</a></li>
+                <li><a href="https://luxglow-d4b79a79c57e.herokuapp.com/">Cookie Policy</a></li>
+                <li><a href="https://luxglow-d4b79a79c57e.herokuapp.com/">Disclaimer</a></li>
             </ul>
         </div>
 
         <div class="footer-col">
             <h4>More Links</h4>
             <ul>
-                <li><a href="https://chatgpt.com">About </a></li>
-                <li><a href="https://chatgpt.com">Services</a></li>
-                <li><a href="https://chatgpt.com">Why Choose Us</a></li>
-                <li><a href="https://chatgpt.com">Contact</a></li>
+                <li><a href="https://luxglow-d4b79a79c57e.herokuapp.com/">About </a></li>
+                <li><a href="https://luxglow-d4b79a79c57e.herokuapp.com/">Services</a></li>
+                <li><a href="https://luxglow-d4b79a79c57e.herokuapp.com/">Why Choose Us</a></li>
+                <li><a href="https://luxglow-d4b79a79c57e.herokuapp.com/">Contact</a></li>
             </ul>
         </div>
 
@@ -1355,7 +1354,7 @@ nav a:hover::after{
             <ul class="footer-contact">
                 <li>📍 Serving All Locations Across USA</li>
                 <li>📞 +1 (000) 123-4567</li>
-                <li>✉️ support@luxglowlighting.com</li>
+                 <li><a href="https://luxglow-d4b79a79c57e.herokuapp.com/">✉️ support@luxglow.com</a></li>
             </ul>
         </div>
 
@@ -1409,3 +1408,4 @@ function toggleMenu(){
 
 </body>
 </html>
+
