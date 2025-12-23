@@ -999,7 +999,7 @@ nav a:hover::after{
 <body>
 
 <!-- PRELOADER START -->
-<div id="preloader-wrapper">
+<!--<div id="preloader-wrapper">
     <div id="preloader-overlay"></div>
     <div class="preloader-content">
         <div class="spinner"></div>
@@ -1009,7 +1009,7 @@ nav a:hover::after{
             <button id="continueBtn">Continue</button>
         </div>
     </div>
-</div>
+</div>-->
 <!-- PRELOADER END -->
 
 
@@ -1473,7 +1473,7 @@ nav a:hover::after{
 
 
 
-<script>
+<!--<script>
 document.addEventListener("DOMContentLoaded", function(){
 
     const preloaderWrapper = document.getElementById("preloader-wrapper");
@@ -1502,7 +1502,7 @@ document.addEventListener("DOMContentLoaded", function(){
     });
 
 });
-</script>
+</script>-->
 
 
 
@@ -1544,5 +1544,6 @@ function toggleMenu(){
 
 </body>
 </html>
+
 
 
